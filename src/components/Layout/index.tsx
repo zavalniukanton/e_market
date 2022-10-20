@@ -7,7 +7,7 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col relative">
       <Header />
       <main> {children}</main>
       <Footer />
