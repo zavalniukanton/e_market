@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+import LogoIcon from "@components/Icons/Logo";
+
 const Header = () => {
   const { scrollY } = useScroll();
 
   const offsetY = [0, 100];
   const heightSizes = [80, 40];
-  const fontSizes = ["30px", "20px"];
 
   const height = useTransform(scrollY, offsetY, heightSizes);
-  const fontSize = useTransform(scrollY, offsetY, fontSizes);
 
   return (
     <motion.header
@@ -17,12 +17,7 @@ const Header = () => {
       style={{ height }}
     >
       <Link href="/">
-        <motion.p
-          className="hover:text-amber-300 cursor-pointer"
-          style={{ fontSize }}
-        >
-          Emarket
-        </motion.p>
+        <LogoIcon />
       </Link>
       <nav className="ml-auto">
         <ul className="flex jutsify-between items-center">
