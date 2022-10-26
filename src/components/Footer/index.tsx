@@ -1,9 +1,13 @@
-import React from "react";
+import TopSection from "./TopSection";
+import MiddleSection from "./MiddleSection";
+import BottomSection from "./BottomSection";
 
 const Footer = () => {
   return (
-    <footer className="h-20 mt-auto flex justify-center items-center  bg-slate-400">
-      <p className="">footer</p>
+    <footer className="mt-auto">
+      <TopSection />
+      <MiddleSection />
+      <BottomSection />
     </footer>
   );
 };
