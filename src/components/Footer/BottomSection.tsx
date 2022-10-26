@@ -32,7 +32,7 @@ const BottomSection = () => {
 
       <div className="flex items-center">
         <BiCopyright />
-        <p className="ml-1 text-xs">Интернет-магазин E-market, 2022</p>
+        <p className="ml-1 text-xs">Интернет-магазин Rozetka, 2022</p>
       </div>
     </div>
   );
