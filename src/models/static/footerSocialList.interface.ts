@@ -1,7 +1,4 @@
-export interface Route {
-  name: string;
-  path: string;
-}
+import { Route } from "./route.interface";
 
 export interface FooterLinkListProps {
   listTitle: string;

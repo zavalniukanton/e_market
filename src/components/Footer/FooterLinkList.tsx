@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FooterLinkListProps } from "models";
+import { FooterLinkListProps } from "@models/static/footerSocialList.interface";
 
 const FooterLinkList = ({ listTitle, data }: FooterLinkListProps) => {
   return (
