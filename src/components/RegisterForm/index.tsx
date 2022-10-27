@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 interface RegisterFormProps {
   onToggleRegisterForm: () => void;
 }
@@ -77,13 +78,22 @@ const RegisterForm = ({ onToggleRegisterForm }: RegisterFormProps) => {
 
       <p className="mb-4 text-sm text-zinc-500">
         Регистрируясь, вы соглашаетесь с условиями{" "}
-        <span className="text-sky-600 hover:text-orange-500 cursor-pointer">
+        <a
+          href="/privacy"
+          target="_blanket"
+          className="text-sky-600 hover:text-orange-500 cursor-pointer"
+          onClick={() => {}}
+        >
           положения о сборе и защите персональных данных
-        </span>{" "}
+        </a>{" "}
         и{" "}
-        <span className="text-sky-600 hover:text-orange-500 cursor-pointer">
+        <a
+          href="/legal_terms"
+          target="_blanket"
+          className="text-sky-600 hover:text-orange-500 cursor-pointer"
+        >
           пользовательским соглашением
-        </span>
+        </a>
       </p>
 
       <button
