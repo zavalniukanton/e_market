@@ -2,9 +2,12 @@ import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiMenu, FiSearch } from "react-icons/fi";
 import { BiUser, BiCart } from "react-icons/bi";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import LogoIcon from "@components/Icons/Logo";
+import Modal from "@components/Modal";
+import CartModal from "@components/Modal/CartModal";
+import AuthModal from "@components/Modal/AuthModal";
 
 const offsetY = [0, 100];
 const heightSizes = [32, 0];
@@ -12,8 +15,9 @@ const heightSizes = [32, 0];
 const Header = () => {
   const { scrollY } = useScroll();
   const inputRef = useRef<HTMLInputElement | null>(null);
-
   const height = useTransform(scrollY, offsetY, heightSizes);
+  const [isAuthModal, setIsAuthModal] = useState(false);
+  const [isCartModal, setIsCartModal] = useState(false);
 
   const onMenuOpen = () => {
     console.log("open menu");
@@ -23,18 +27,18 @@ const Header = () => {
     console.log(inputRef.current?.value);
   };
 
-  const onAuth = () => {
-    console.log("login");
+  const onToggleAuthModal = () => {
+    setIsAuthModal((prevState) => !prevState);
   };
 
-  const onCartOpen = () => {
-    console.log("open cart");
+  const onToggleCartModal = () => {
+    setIsCartModal((prevState) => !prevState);
   };
 
   return (
     <>
       <motion.div
-        className="flex items-center justify-center h-8  text-white bg-[#005C09] cursor-pointer"
+        className="flex items-center justify-center h-8 text-white bg-[#005C09] cursor-pointer"
         style={{ height }}
       >
         <Link href="/discounts" passHref>
@@ -45,7 +49,7 @@ const Header = () => {
         </Link>
       </motion.div>
 
-      <header className="sticky top-0 flex items-center h-20 px-20 text-white bg-zinc-900 z-50">
+      <header className="sticky top-0 flex items-center h-20 px-20 text-white bg-zinc-900 z-10">
         <button className="p-1 mr-5 rounded" onClick={onMenuOpen}>
           <FiMenu fontSize={32} />
         </button>
@@ -75,14 +79,22 @@ const Header = () => {
           </button>
         </div>
 
-        <button className="p-1 mr-5 rounded" onClick={onAuth}>
+        <button className="p-1 mr-5 rounded" onClick={onToggleAuthModal}>
           <BiUser fontSize={32} />
         </button>
 
-        <button className="p-1 rounded" onClick={onCartOpen}>
+        <button className="p-1 rounded" onClick={onToggleCartModal}>
           <BiCart fontSize={32} />
         </button>
       </header>
+
+      <Modal isOpen={isAuthModal} onClose={onToggleAuthModal} title="Вход">
+        <AuthModal />
+      </Modal>
+
+      <Modal isOpen={isCartModal} onClose={onToggleCartModal} title="Корзина">
+        <CartModal />
+      </Modal>
     </>
   );
 };
