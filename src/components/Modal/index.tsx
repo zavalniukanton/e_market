@@ -22,7 +22,7 @@ const Modal = ({ isOpen, onClose, children, title }: ModalProps) => {
   }, []);
 
   const modalContent = isOpen ? (
-    <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-[#00000080]">
+    <div className="fixed top-0 left-0 right-0 bottom-0 w-full h-full flex justify-center items-center bg-[#00000080]">
       <div className="bg-white w-auto h-auto rounded-2xl z-50">
         <div className="flex justify-between items-center py-3 px-6 border-b-zinc-300 border-b">
           <p className="text-2xl">{title}</p>

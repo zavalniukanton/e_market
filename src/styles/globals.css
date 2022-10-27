@@ -8,5 +8,5 @@
 
 html,
 body {
-  @apply min-h-screen p-0 m-0 text-black bg-[white];
+  @apply max-h-full p-0 m-0 text-black bg-[white];
 }
