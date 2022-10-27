@@ -10,18 +10,18 @@ const LoginForm = ({ onToggleRegisterForm }: LoginFormProps) => {
           Эл. почта или телефон
         </span>
         <input
-          type="text"
+          type="email"
           className="block peer w-full mt-1 px-3 py-2 border border-zinc-300 rounded text-base bg-white 
             focus:outline-none focus:border-sky-600 focus:ring-1 focus:ring-sky-600
             invalid:border-pink-500 invalid:text-pink-600
             focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
         />
         <p className="mt-1 hidden peer-invalid:block text-pink-600 text-xs">
-          Введен неверный адрес эл.почты или номер телефона
+          Введен неверный адрес эл.почты
         </p>
       </label>
 
-      <label className="block">
+      <label className="block mb-4">
         <span className="block text-sm text-zinc-500">Пароль</span>
         <input
           type="password"
@@ -37,7 +37,7 @@ const LoginForm = ({ onToggleRegisterForm }: LoginFormProps) => {
 
       <button
         type="submit"
-        className="w-full h-12 my-2 rounded font-medium text-lg text-white bg-[#00a046] hover:bg-green-500"
+        className="w-full h-12 mb-2 rounded font-medium text-lg text-white bg-[#00a046] hover:bg-green-500"
       >
         Войти
       </button>

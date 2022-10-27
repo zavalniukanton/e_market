@@ -2,6 +2,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 import LoginForm from "@components/LoginForm";
+import RegisterForm from "@components/RegisterForm";
+import VerticalDividerWithLabel from "@components/VerticalDividerWithLabel";
 
 import facebook from "../../../public/images/facebook.png";
 import google from "../../../public/images/google.png";
@@ -14,25 +16,21 @@ const AuthModal = () => {
   };
 
   return (
-    <div className="grid grid-cols-[6.5fr_1fr_4.5fr] w-[35vw] p-6">
+    <div className="grid grid-cols-[7fr_1fr_4fr] w-[35vw] p-6">
       {isRegisterForm ? (
-        <div>Register form</div>
+        <RegisterForm onToggleRegisterForm={onToggleRegisterForm} />
       ) : (
         <LoginForm onToggleRegisterForm={onToggleRegisterForm} />
       )}
 
-      <div className="flex flex-col items-center justify-center">
-        <div className="w-px h-28 bg-zinc-300" />
-        <p className="my-1 mx-6 text-sm text-zinc-500">или</p>
-        <div className="w-px h-28 bg-zinc-300" />
-      </div>
+      <VerticalDividerWithLabel label="или" />
 
       <div>
         <p className="mb-4 text-sm text-center text-zinc-500">
           Войти как пользователь
         </p>
 
-        <button className="flex items-center justify-center w-full h-12 mb-4 rounded border border-zinc-300 bg-zinc-200">
+        <button className="flex items-center justify-center w-full h-12 mb-4 rounded border border-zinc-300 bg-zinc-200 hover:bg-gray-300">
           <Image
             width={18}
             height={18}
@@ -45,7 +43,7 @@ const AuthModal = () => {
           </span>
         </button>
 
-        <button className="flex items-center justify-center w-full h-12 rounded border border-zinc-300 bg-zinc-200">
+        <button className="flex items-center justify-center w-full h-12 rounded border border-zinc-300 bg-zinc-200  hover:bg-gray-300">
           <Image
             width={20}
             height={20}
