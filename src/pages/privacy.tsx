@@ -31,7 +31,7 @@ const Privacy: NextPage = () => {
           <p className="mb-3 font-bold text-sm">
             Общие положения и область применения.
           </p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Это Положение об обработке и защите персональных данных (далее –
               «Положение») разработано ООО «Розетка. УА» (код ЕГРПОУ: 37193071,
@@ -100,7 +100,7 @@ const Privacy: NextPage = () => {
           <p className="mb-3 font-bold text-sm">
             Состав и содержание персональных данных.
           </p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Под Данными понимается любая информация, прямо или косвенно
               относящаяся к конкретному Пользователю. Это может быть:
@@ -156,10 +156,10 @@ const Privacy: NextPage = () => {
           <p className="mb-3 font-bold text-sm">
             Цель, границы и сроки обработки персональных данных.
           </p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Целью обработки персональных данных является:
-              <ol className="text-sm space-y-2 list-decimal pl-8">
+              <ol className="text-sm space-y-2 list-disc pl-8">
                 <li>
                   обеспечение реализации гражданско-правовых отношений,
                   хозяйственных, налоговых отношений, осуществление возложенных
@@ -263,7 +263,7 @@ const Privacy: NextPage = () => {
           <p className="mb-3 font-bold text-sm">
             Местонахождение персональных данных.
           </p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Персональные данные Пользователей Интернет-магазина обрабатываются
               и защищаются на защищенных серверах Общества.
@@ -275,7 +275,7 @@ const Privacy: NextPage = () => {
           <p className="mb-3 font-bold text-sm">
             Условия раскрытия информации о персональных данных третьим лицам.
           </p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Общество может осуществлять обмен данными с аффилированными лицами
               Общества (компании, действующие на основании общей собственности),
@@ -332,7 +332,7 @@ const Privacy: NextPage = () => {
               действующим законодательством Украины и только в интересах
               национальной безопасности, экономического благополучия и прав
               человека, в частности, но не исключительно:
-              <ol className="text-sm space-y-2 list-decimal pl-8">
+              <ol className="text-sm space-y-2 list-disc pl-8">
                 <li>
                   по обоснованным запросам органов государственной власти,
                   имеющих право истребовать и получать такие данные;
@@ -348,7 +348,7 @@ const Privacy: NextPage = () => {
 
         <li>
           <p className="mb-3 font-bold text-sm">Защита персональных данных.</p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Владелец персональных данных оборудован системными и
               программно-техническими средствами и средствами связи, которые
@@ -390,7 +390,7 @@ const Privacy: NextPage = () => {
               Двухфакторная аутентификация активируется, если в аккаунте
               пользователя имеется подтвержденный номер телефона и выполняется
               хотя бы одно из условий, указанных ниже:
-              <ol className="text-sm space-y-2 list-decimal pl-8">
+              <ol className="text-sm space-y-2 list-disc pl-8">
                 <li>в аккаунте есть подтвержденный номер телефона;</li>
                 <li>к аккаунту привязана банковская карта;</li>
                 <li>на балансе аккаунта есть доступные бонусы;</li>
@@ -409,7 +409,7 @@ const Privacy: NextPage = () => {
               (идентификатор верифицированного устройства/приложения). В этом же
               сообщении содержится информация о параметрах входа в его/ее
               аккаунт:
-              <ol className="text-sm space-y-2 list-decimal pl-8">
+              <ol className="text-sm space-y-2 list-disc pl-8">
                 <li>дата попытки авторизации</li>
                 <li>IP устройства</li>
                 <li>тип клиентского браузера</li>
@@ -446,10 +446,10 @@ const Privacy: NextPage = () => {
           <p className="mb-3 font-bold text-sm">
             Права пользователя (субъекта персональных данных).
           </p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Субъект персональных данных (Пользователь) имеет право:
-              <ol className="text-sm space-y-2 list-decimal pl-8">
+              <ol className="text-sm space-y-2 list-disc pl-8">
                 <li>
                   знать о местонахождении персональных данных, содержащей его
                   персональные данные, ее назначении и наименовании,
@@ -514,7 +514,7 @@ const Privacy: NextPage = () => {
             Порядок работы с запросами субъекта персональных данных
             (Пользователя).
           </p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Субъект персональных данных (Пользователь) имеет право на
               получение любых сведений о себе у любого субъекта отношений,
@@ -529,7 +529,7 @@ const Privacy: NextPage = () => {
               Субъект персональных данных (Пользователь) подает запрос о доступе
               (далее — запрос) к персональным данным владельцу персональных
               данных. <br />В запросе указываются:
-              <ol className="text-sm space-y-2 list-decimal pl-8">
+              <ol className="text-sm space-y-2 list-disc pl-8">
                 <li>
                   фамилия, имя, отчество, место жительства (место пребывания) и
                   реквизиты документа, удостоверяющего личность субъекта
@@ -568,7 +568,7 @@ const Privacy: NextPage = () => {
           <p className="mb-3 font-bold text-sm">
             Внесение изменения в Положение.
           </p>
-          <ol className="text-sm space-y-2 list-disc pl-4">
+          <ol className="text-sm space-y-2 list-[lower-alpha] pl-4">
             <li>
               Общество может время от времени в одностороннем порядке обновлять
               это Положение без уведомления Пользователя о таких изменениях.
