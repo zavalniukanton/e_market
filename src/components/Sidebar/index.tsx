@@ -4,7 +4,7 @@ import { sidebarLinks } from "@assets/data/sidebarLinks";
 
 const Sidebar = () => {
   return (
-    <div className="pr-10 border-r border-r-zinc-300">
+    <div className="w-1/5 pr-10 border-r border-r-zinc-300">
       <ul>
         {sidebarLinks.map((link) => (
           <li
