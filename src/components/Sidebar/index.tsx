@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-import { sidebarData } from "@assets/data/sidebarData";
+import { sidebarLinks } from "@assets/data/sidebarLinks";
 
 const Sidebar = () => {
   return (
     <div className="pr-10 border-r border-r-zinc-300">
       <ul>
-        {sidebarData.map((link) => (
+        {sidebarLinks.map((link) => (
           <li
             key={link.path}
             className="mb-2 last-of-type:mb-0 text-sm text-sky-600 hover:text-red-500 hover:underline"

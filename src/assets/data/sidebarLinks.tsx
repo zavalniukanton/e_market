@@ -13,7 +13,7 @@ import { RiBearSmileLine, RiBaiduLine } from "react-icons/ri";
 import { FaBarcode } from "react-icons/fa";
 import { HiOutlinePaperClip } from "react-icons/hi";
 
-export const sidebarData = [
+export const sidebarLinks = [
   {
     path: "/laptops-computers",
     name: "Ноутбуки та компьютеры",
