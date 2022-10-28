@@ -35,7 +35,7 @@ const MiddleSection = () => {
   };
 
   return (
-    <div className="flex px-20 py-5 border-b border-b-grey-500">
+    <div className="flex px-20 py-5 border-b border-b-zinc-300">
       <div className="mr-20">
         <Link href="/call-center">
           <a className="flex items-center mb-5 text-sky-600 hover:text-orange-500">
