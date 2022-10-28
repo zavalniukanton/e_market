@@ -43,5 +43,6 @@
         "newlines-between": "always"
       }
     ]
-  }
+  },
+  "ignorePatterns": ["**/*.js", "**/*.json", "node_modules", "public"]
 }

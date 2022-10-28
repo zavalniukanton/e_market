@@ -13,7 +13,7 @@ npm run check-lint || ( echo "❌🤮😵‍💫 Get that weak s**t out of here.
 # If everything passes... try to run a build
 echo "🤔🤔🤔 ...Alright... Code looks good to me... Trying to build now 🤔🤔🤔"
 
-npm run build || ( echo "❌⛑️🔨 Better call Bob... Because your build failed 🔨⛑️❌ Next build failed: View the errors above to see why" false;)
+# npm run build || ( echo "❌⛑️🔨 Better call Bob... Because your build failed 🔨⛑️❌ Next build failed: View the errors above to see why" false;)
 
 # If it builds we can commit 
 echo "✅✅✅ You win this time... I am commiting this now ✅✅✅"
