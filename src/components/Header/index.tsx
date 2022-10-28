@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       <motion.div
-        className="flex items-center justify-center h-8 text-white bg-[#005C09] cursor-pointer"
+        className="flex items-center justify-center h-8 text-white bg-green-secondary cursor-pointer"
         style={{ height }}
       >
         <Link href="/discounts" passHref>
@@ -73,7 +73,7 @@ const Header = () => {
           <button
             type="submit"
             onClick={onSubmit}
-            className="h-full px-4 text-base bg-[#00a046]"
+            className="h-full px-4 text-base bg-green-primary"
           >
             Найти
           </button>

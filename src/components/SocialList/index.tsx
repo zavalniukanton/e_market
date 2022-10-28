@@ -11,7 +11,7 @@ const SocialList = () => {
   const socialList = [
     {
       id: "1",
-      url: "#",
+      url: "https://www.facebook.com/rozetka.ua",
       icon: (
         <FaFacebookF
           fontSize={32}
@@ -26,7 +26,7 @@ const SocialList = () => {
     },
     {
       id: "2",
-      url: "#",
+      url: "https://twitter.com/rozetka_ua",
       icon: (
         <FaTwitter
           fontSize={32}
@@ -41,7 +41,7 @@ const SocialList = () => {
     },
     {
       id: "3",
-      url: "#",
+      url: "https://www.youtube.com/channel/UCr7r1-z79TYfqS2IPeRR47A",
       icon: (
         <FaYoutube
           fontSize={32}
@@ -56,7 +56,7 @@ const SocialList = () => {
     },
     {
       id: "4",
-      url: "#",
+      url: "https://www.instagram.com/rozetkaua/",
       icon: (
         <FaInstagram
           fontSize={32}
@@ -72,7 +72,7 @@ const SocialList = () => {
     },
     {
       id: "5",
-      url: "#",
+      url: "https://invite.viber.com/?g2=AQB9mwM%2F5f%2FxJUlMxP4V9flr2%2BvXTC1MpxdGFZ0P6d%2Fs6Ws%2FFe%2FQtLiZwA4E28sj&lang=ru",
       icon: (
         <FaViber
           fontSize={32}
@@ -87,7 +87,7 @@ const SocialList = () => {
     },
     {
       id: "6",
-      url: "#",
+      url: "https://t.me/rrozetka",
       icon: (
         <FaTelegramPlane
           fontSize={32}

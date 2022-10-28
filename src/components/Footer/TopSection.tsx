@@ -5,7 +5,7 @@ import appStore from "../../../public/images/appstore.png";
 
 const TopSection = () => {
   return (
-    <div className="flex items-center py-4 px-20 text-white bg-[#00a046]">
+    <div className="flex items-center py-4 px-20 text-white bg-green-primary">
       <p className="grow text-xl text-center">Скачивайте наши приложения</p>
       <div className="flex items-center">
         <a

@@ -24,8 +24,8 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "no-duplicate-imports": "error",
+    "no-debugger": "error",
     "no-unused-vars": "warn",
-    "no-debugger": "warn",
     "no-console": "warn",
     "import/order": [
       "error",

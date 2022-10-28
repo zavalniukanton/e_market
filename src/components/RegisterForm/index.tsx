@@ -100,7 +100,7 @@ const RegisterForm = ({ onToggleRegisterForm }: RegisterFormProps) => {
 
       <button
         type="submit"
-        className="w-full h-12 mb-2 rounded font-medium text-lg text-white bg-[#00a046] hover:bg-green-500"
+        className="w-full h-12 mb-2 rounded font-medium text-lg text-white bg-green-primary hover:bg-green-500"
       >
         Зарегистрироваться
       </button>
