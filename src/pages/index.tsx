@@ -1,7 +1,8 @@
+import { homePageSliderData } from "@assets/data/homePageSliderData";
 import AllPromotionsButton from "@components/AllDiscountButton";
 import Carousel from "@components/Carousel";
 import Sidebar from "@components/Sidebar";
-import { homePageSliderData } from "@assets/data/homePageSliderData";
+import ProductCard from "@components/ProductCard";
 
 import type { NextPage } from "next";
 
@@ -11,13 +12,24 @@ const Home: NextPage = () => {
       <Sidebar />
 
       <div className="w-full pl-10 overflow-x-hidden">
-        <div className="w-[1200px]">
+        <div className="w-[1200px] mb-16">
           <Carousel data={homePageSliderData} />
           <AllPromotionsButton />
         </div>
 
-        <section>
+        <section className="mb-16">
           <h2 className="mb-4 text-xl">Последние просмотренные товары</h2>
+          <div className="grid grid-cols-6 gap-2">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
         </section>
 
         <section>
