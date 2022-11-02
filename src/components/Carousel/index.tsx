@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -14,11 +14,12 @@ interface CarouselProps {
 const Carousel = ({ data }: CarouselProps) => {
   return (
     <Swiper
-      modules={[Navigation]}
+      modules={[Autoplay, Navigation]}
       id="main"
       tag="section"
       wrapperTag="ul"
       navigation
+      autoplay={{ delay: 5000 }}
       loop={true}
       spaceBetween={0}
       slidesPerView={1}

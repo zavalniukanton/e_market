@@ -8,5 +8,14 @@
 
 html,
 body {
-  @apply max-h-full p-0 m-0 text-black bg-[white];
+  @apply max-h-full p-0 m-0 text-black bg-white;
+}
+
+.swiper {
+  z-index: 0 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply hover:text-orange-500;
 }
