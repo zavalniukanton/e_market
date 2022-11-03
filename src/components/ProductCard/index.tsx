@@ -8,9 +8,9 @@ import smart from "../../../public/images/smart_band.jpg";
 const ProductCard = () => {
   return (
     <article className="relative p-4 border border-zinc-300">
-      <span className="absolute right-4 p-2 rounded text-orange-500 hover:bg-zinc-100 hover:cursor-pointer">
+      <button className="absolute right-4 p-2 rounded text-orange-500 hover:bg-zinc-100">
         <FaRegHeart fontSize={20} />
-      </span>
+      </button>
 
       <Link href="#">
         <a className="flex justify-center my-6">

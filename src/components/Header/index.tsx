@@ -50,7 +50,10 @@ const Header = () => {
       </motion.div>
 
       <header className="sticky top-0 flex items-center h-20 px-20 text-white bg-zinc-900 z-10">
-        <button className="p-1 mr-5 rounded" onClick={onMenuOpen}>
+        <button
+          className="p-2 mr-5 rounded hover:bg-zinc-100 hover:text-black"
+          onClick={onMenuOpen}
+        >
           <FiMenu fontSize={32} />
         </button>
 
@@ -79,11 +82,17 @@ const Header = () => {
           </button>
         </div>
 
-        <button className="p-1 mr-5 rounded" onClick={onToggleAuthModal}>
+        <button
+          className="p-2 mr-5 rounded hover:bg-zinc-100 hover:text-black"
+          onClick={onToggleAuthModal}
+        >
           <BiUser fontSize={32} />
         </button>
 
-        <button className="p-1 rounded" onClick={onToggleCartModal}>
+        <button
+          className="p-2 rounded hover:bg-zinc-100 hover:text-black"
+          onClick={onToggleCartModal}
+        >
           <BiCart fontSize={32} />
         </button>
       </header>

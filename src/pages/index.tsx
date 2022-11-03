@@ -21,47 +21,60 @@ const Home: NextPage = () => {
           <h2 className="mb-4 text-xl">Последние просмотренные товары</h2>
           <div className="grid grid-cols-6 gap-2">
             <ProductCard />
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="mb-4 text-xl">
+            Бестселлеры в категории Фитнес-браслеты
+          </h2>
+          <div className="grid grid-cols-6 gap-2">
             <ProductCard />
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="mb-4 text-xl">Акционные предложения</h2>
+          <div className="grid grid-cols-6 gap-2">
             <ProductCard />
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="mb-4 text-xl">Горячие новинки</h2>
+          <div className="grid grid-cols-6 gap-2">
             <ProductCard />
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="mb-4 text-xl">
+            Чаще всего добавляют в список желаний
+          </h2>
+          <div className="grid grid-cols-6 gap-2">
             <ProductCard />
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="mb-4 text-xl">Самые ожидаемые</h2>
+          <div className="grid grid-cols-6 gap-2">
             <ProductCard />
-            <ProductCard />
-            <ProductCard />
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="mb-4 text-xl">Самые обсуждаемые товары</h2>
+          <div className="grid grid-cols-6 gap-2">
             <ProductCard />
           </div>
         </section>
 
         <section>
-          <h2 className="mb-4 text-xl">
-            Бестселлеры в категории Фитнес-браслеты
-          </h2>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-xl">Акционные предложения</h2>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-xl">Горячие новинки</h2>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-xl">
-            Чаще всего добавляют в список желаний
-          </h2>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-xl">Самые ожидаемые</h2>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-xl">Самые обсуждаемые товары</h2>
-        </section>
-
-        <section>
           <h2 className="mb-4 text-xl">Сейчас пользуются спросом</h2>
+          <div className="grid grid-cols-6 gap-2">
+            <ProductCard />
+          </div>
         </section>
       </div>
     </div>
