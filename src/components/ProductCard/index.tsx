@@ -13,7 +13,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const { title, price, oldPrice, currency, image } = product;
 
   return (
-    <article className="relative p-4 border border-zinc-300">
+    <article className="relative p-4 border border-zinc-300 overflow-hidden">
       <button className="absolute right-4 p-2 rounded text-orange-500 hover:bg-zinc-100">
         <FaRegHeart fontSize={20} />
       </button>
@@ -25,7 +25,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
       </Link>
 
       <Link href="#">
-        <a className="text-sm hover:text-red-500 hover:underline">{title}</a>
+        <a className="text-sm line-clamp-2 hover:text-red-500 hover:underline">
+          {title}
+        </a>
       </Link>
 
       {!!oldPrice && (
