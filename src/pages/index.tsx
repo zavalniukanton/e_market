@@ -1,10 +1,10 @@
 import { homePageSliderData } from "@assets/data/homePageSliderData";
 import { recentGoods } from "@assets/data/recentGoods";
 import { smartBandsBestsellers } from "@assets/data/smartBandsBestsellers";
-import AllPromotionsButton from "@components/AllDiscountButton";
 import Carousel from "@components/Carousel";
 import Sidebar from "@components/Sidebar";
-import ProductCard from "@components/ProductCard";
+import AllPromotionsButton from "@components/AllPromotionsButton";
+import ProductsSection from "@components/ProductsSection";
 
 import type { NextPage } from "next";
 
@@ -19,25 +19,16 @@ const Home: NextPage = () => {
           <AllPromotionsButton />
         </div>
 
-        <section className="mb-16">
-          <h2 className="mb-4 text-xl">Последние просмотренные товары</h2>
-          <div className="grid grid-cols-6 gap-2">
-            {recentGoods.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </section>
+        <ProductsSection
+          title="Последние просмотренные товары"
+          products={recentGoods}
+        />
 
-        <section className="mb-16">
-          <h2 className="mb-4 text-xl">
-            Бестселлеры в категории Фитнес-браслеты
-          </h2>
-          <div className="grid grid-cols-6 gap-2">
-            {smartBandsBestsellers.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </section>
+        <ProductsSection
+          title=" Бестселлеры в категории Фитнес-браслеты"
+          products={smartBandsBestsellers}
+        />
+
         {/* 
         <section className="mb-16">
           <h2 className="mb-4 text-xl">Акционные предложения</h2>
