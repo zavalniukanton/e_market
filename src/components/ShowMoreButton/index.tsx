@@ -7,7 +7,7 @@ interface ShowMoreButtonProps {
 const ShowMoreButton = ({ onShowMore }: ShowMoreButtonProps) => {
   return (
     <button
-      className="flex justify-center items-center h-10 w-40 ml-auto rounded border border-zinc-300 text-sky-600 hover:text-red-500"
+      className="absolute right-0 flex justify-center items-center h-10 w-40 rounded border border-zinc-300 text-sky-600 hover:text-red-500"
       onClick={onShowMore}
     >
       Показать еще

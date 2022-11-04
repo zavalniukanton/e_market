@@ -44,7 +44,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
       <p
         className={`text-2xl ${oldPrice ? "text-red-500" : "text-black"} ${
-          oldPrice ? "" : "mt-7"
+          oldPrice ? "mt-0" : "mt-7"
         }`}
       >
         {price} <span className="text-lg">{currency}</span>
