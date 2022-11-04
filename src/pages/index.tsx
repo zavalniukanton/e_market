@@ -1,4 +1,6 @@
 import { homePageSliderData } from "@assets/data/homePageSliderData";
+import { recentGoods } from "@assets/data/recentGoods";
+import { smartBandsBestsellers } from "@assets/data/smartBandsBestsellers";
 import AllPromotionsButton from "@components/AllDiscountButton";
 import Carousel from "@components/Carousel";
 import Sidebar from "@components/Sidebar";
@@ -20,7 +22,9 @@ const Home: NextPage = () => {
         <section className="mb-16">
           <h2 className="mb-4 text-xl">Последние просмотренные товары</h2>
           <div className="grid grid-cols-6 gap-2">
-            <ProductCard />
+            {recentGoods.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
           </div>
         </section>
 
@@ -29,53 +33,55 @@ const Home: NextPage = () => {
             Бестселлеры в категории Фитнес-браслеты
           </h2>
           <div className="grid grid-cols-6 gap-2">
-            <ProductCard />
+            {smartBandsBestsellers.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
           </div>
         </section>
-
+        {/* 
         <section className="mb-16">
           <h2 className="mb-4 text-xl">Акционные предложения</h2>
           <div className="grid grid-cols-6 gap-2">
             <ProductCard />
           </div>
-        </section>
+        </section> */}
 
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-4 text-xl">Горячие новинки</h2>
           <div className="grid grid-cols-6 gap-2">
             <ProductCard />
           </div>
-        </section>
+        </section> */}
 
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-4 text-xl">
             Чаще всего добавляют в список желаний
           </h2>
           <div className="grid grid-cols-6 gap-2">
             <ProductCard />
           </div>
-        </section>
+        </section> */}
 
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-4 text-xl">Самые ожидаемые</h2>
           <div className="grid grid-cols-6 gap-2">
             <ProductCard />
           </div>
-        </section>
+        </section> */}
 
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="mb-4 text-xl">Самые обсуждаемые товары</h2>
           <div className="grid grid-cols-6 gap-2">
             <ProductCard />
           </div>
-        </section>
+        </section> */}
 
-        <section>
+        {/* <section>
           <h2 className="mb-4 text-xl">Сейчас пользуются спросом</h2>
           <div className="grid grid-cols-6 gap-2">
             <ProductCard />
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

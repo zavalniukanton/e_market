@@ -3,9 +3,15 @@ import Link from "next/link";
 import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 
-import smart from "../../../public/images/smart_band.jpg";
+import { Product } from "@models/product.interface";
 
-const ProductCard = () => {
+interface ProductCardProps {
+  product: Product;
+}
+
+const ProductCard = ({ product }: ProductCardProps) => {
+  const { title, price, oldPrice, currency, image } = product;
+
   return (
     <article className="relative p-4 border border-zinc-300">
       <button className="absolute right-4 p-2 rounded text-orange-500 hover:bg-zinc-100">
@@ -14,18 +20,26 @@ const ProductCard = () => {
 
       <Link href="#">
         <a className="flex justify-center my-6">
-          <Image src={smart} alt="product image" width={95} height={140} />
+          <Image src={image} alt="product image" width={95} height={140} />
         </a>
       </Link>
 
       <Link href="#">
-        <a className="text-sm hover:text-red-500 hover:underline">
-          Xiaomi Mi Smart Band 7 Black (943155)
-        </a>
+        <a className="text-sm hover:text-red-500 hover:underline">{title}</a>
       </Link>
 
-      <p className="mt-4 text-2xl">
-        1799 <span className="text-lg">₴</span>
+      {!!oldPrice && (
+        <p className="my-1 text-sm line-through text-zinc-400">
+          {oldPrice} <span>{currency}</span>
+        </p>
+      )}
+
+      <p
+        className={`text-2xl ${oldPrice ? "text-red-500" : "text-black"} ${
+          oldPrice ? "" : "mt-7"
+        }`}
+      >
+        {price} <span className="text-lg">{currency}</span>
       </p>
     </article>
   );
