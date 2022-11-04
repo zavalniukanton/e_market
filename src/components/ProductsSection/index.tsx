@@ -20,7 +20,7 @@ const ProductsSection = ({ title, products }: ProductsSectionProps) => {
   const isShowMoreButtonVisible = products.length >= 6 && !isShowMoreClicked;
 
   return (
-    <section className="mb-16">
+    <section className={`${products.length >= 6 ? "mb-6" : "mb-16"}`}>
       <h2 className="mb-4 text-xl">{title}</h2>
 
       <div className="grid grid-cols-6 gap-2 mb-2">

@@ -20,7 +20,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
       <Link href="#">
         <a className="flex justify-center my-6">
-          <Image src={image} alt="product image" width={95} height={140} />
+          <Image
+            src={image}
+            alt="product image"
+            width={95}
+            height={140}
+            objectFit="contain"
+          />
         </a>
       </Link>
 

@@ -1,6 +1,7 @@
 import { homePageSliderData } from "@assets/data/homePageSliderData";
 import { recentGoods } from "@assets/data/recentGoods";
 import { smartBandsBestsellers } from "@assets/data/smartBandsBestsellers";
+import { promotionalOffers } from "@assets/data/promotionalOffers";
 import Carousel from "@components/Carousel";
 import Sidebar from "@components/Sidebar";
 import AllPromotionsButton from "@components/AllPromotionsButton";
@@ -29,13 +30,10 @@ const Home: NextPage = () => {
           products={smartBandsBestsellers}
         />
 
-        {/* 
-        <section className="mb-16">
-          <h2 className="mb-4 text-xl">Акционные предложения</h2>
-          <div className="grid grid-cols-6 gap-2">
-            <ProductCard />
-          </div>
-        </section> */}
+        <ProductsSection
+          title="Акционные предложения"
+          products={promotionalOffers}
+        />
 
         {/* <section className="mb-16">
           <h2 className="mb-4 text-xl">Горячие новинки</h2>
